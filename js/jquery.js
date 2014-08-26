@@ -1,0 +1,12 @@
+$(function(){
+	$("section").hide();
+	$("footer").hide();
+	$("nav").hide();
+	$("header").hide().fadeIn("slow",function(){
+		$("nav").hide().slideDown("slow",function(){
+			$("section").fadeIn("fast",function(){
+				$("footer").fadeIn("fast")
+			})
+		})
+	})
+});
