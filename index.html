@@ -18,21 +18,71 @@
 				<h1>Ryan Timmons</h1>
 				<h2>Developer</h2>
 			</header>
-			<script src="js/fade.js"></script>
+			
 			<nav>
 				<ul>
-					<li><a href="index.html" class="selected btn">Projects</a></li>
-					<li><a href="about.html" class="btn">About</a></li>
-					<li><a href="contact.html" class="btn">Contact</a></li>
+					<li><button class="selected btn tab active" id='projects-tab'>Projects</button></li>
+					<li><button class="btn tab" id='about-tab'>About</button></li>
+					<li><button class="btn tab" id='contact-tab'>Contact</button></li>
 				</ul>
 			</nav>
 		</div>
-		<section>
-			<!-- <p id="coming-soon">Projects will be coming soon!</p> -->
-			<div id="project-img-set">
-				<a href="https://github.com/timmonsryan"><img src="img/github.gif" class="img-rounded project-img"></a>
+		<div id="content-wrapper">
+			<div id='projects-content' class="loader">
+				<!-- <p id="coming-soon">Projects will be coming soon!</p> -->
+				<div id="projects-container">
+					<h3>Projects</h3>
+					<button id="RecordStoreBtn" class="btn btn-primary btn-lg btn-block">RecordStore</button>
+					<div class="project-info" id="RecordStoreInfo">
+						<p><i>  Application Created to Track a User's Vinyl Record Collection</i></p>
+						<a href="http://secret-island-1345.herokuapp.com/">Link</a>
+						<ul>
+							<li>Back-End Created Using Ruby on Rails</li>
+							<li>Utilizes PostgreSQL for Database</li>
+							<li>Deployed to Production via Heroku</li>
+						</ul>
+					</div>
+					<button id="PersonalSiteBtn" class="btn btn-primary btn-lg btn-block">Personal Web Site</button>
+					<div class="project-info" id="PersonalSiteInfo">
+						<p><i>Web Site with Personal Information and Project Info</i></p>
+						<a href="http://ryantimmonsdev.com">Link</a>
+						<ul>
+							<li>Constructed Using HTML5, CSS3, and Twitter Bootstrap</li>
+							<li>Utilizes Interactive Javascript and jQuery Animations</li>
+							<li>JavaScript Transitions Allow Site Navigation without Need to Refresh Page</li>
+							<li>Deployed via Simple SFTP</li>
+						</ul>
+					</div>
+				</div>
+				<div id="project-img-set">
+					<p>Github Page</p>
+					<a href="https://github.com/timmonsryan"><img src="img/github.gif" class="img-rounded project-img"></a>
+				</div>
 			</div>
-		</section>
+			<div id='about-content' class="loader">
+				<a>
+					<img src="img/profile.png" alt="">
+				</a>
+				<h3>About</h3>
+				<div id="about_summary">
+					<p class="lead">Hello, my name is Ryan Timmons.</p>
+					<p>I develop websites and web applications using a variety of languages and cutting-edge utilities.</p>
+					<p>My developer's toolkit includes bare essentials like HTML, CSS, and JavaScript, back-end frameworks like Ruby on Rails, and other useful libraries/frameworks such as jQuery, CoffeeScript, Sass, Bootstrap, and AngularJS.</p>
+				</div>
+			</div>
+			<div id="contact-content" class="loader">
+				<h3>Contact</h3>
+				<p id="contact-text">Feel free to contact me via any of the below methods.</p>
+				<span class="label label-info">Email</span>
+				<a href="mailto: timmonsryan@ymail.com">
+				timmonsryan@ymail.com
+				</a><br/>
+				<span class="label label-info">Twitter</span>
+				<a href="https://twitter.com/timmonsryan">
+				@timmonsryan
+				</a>		
+			</div>
+		</div>
 		<footer>
 			<a href="https://twitter.com/timmonsryan">
 				<img src="img/twitter-wrap.png" alt="" class="social-icon">
@@ -42,5 +92,6 @@
 			</a>
 			<p>&copy; 2014 Ryan Timmons</p>
 		</footer>
+		<script src="js/fade.js"></script>
 	</body>
 </html>
