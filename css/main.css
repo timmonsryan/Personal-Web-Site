@@ -66,6 +66,12 @@ nav a.selected, nav a:hover {
 	margin: 0 auto 0;
 }
 
+#GitHubLink {
+	margin: 10px auto;
+	display: block;
+	text-align: center;
+}
+
 /*************************
 HEADER
 *************************/
