@@ -10,6 +10,7 @@ body, .loader {
 
 #content-wrapper {
 	max-width: 640px;
+	width: 80%;
 	display: inline-block;
 }
 
@@ -60,6 +61,11 @@ nav a.selected, nav a:hover {
 	display: inline-block;
 	max-width: 500px;
 	text-align: center;
+}
+
+#about_summary p {
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
 }
 
 .container {
@@ -216,6 +222,21 @@ PAGE CONTACT
 
 #contact-content {
 	margin-bottom: 10px;
+}
+
+#contact-links {
+	width: 250px;
+	display: inline-block;
+	margin: 0 auto 0;
+}
+
+#contact-links span, #contact-links a {
+	float: left;
+	display: inline;
+}
+
+#contact-links a {
+	margin-left: 5px;
 }
 
 
