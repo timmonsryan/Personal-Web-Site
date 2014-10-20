@@ -281,20 +281,20 @@ PAGE PROJECTS
 }
 
 .project-info p {
-	width: 80%;
+	width: 100%;
 	display: inline-block;
-}
-
-.project-info a {
-	display: inline-block;
-	float: right;
-	width: 10%;
-	text-align: right;
 }
 
 #projects-container button {
 	width: 100%;
 	padding: 2px 5px;
+}
+
+.ProjectLinks {
+	width: 100%;
+	clear: both;
+	margin: 0 auto 5px;
+	text-align: center;
 }
 
 

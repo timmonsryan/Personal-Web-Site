@@ -61,3 +61,10 @@ $(function(){
 		$('#PersonalSiteInfo').slideToggle(500);
 	})
 });
+
+$(function(){
+	$('.project-info').hide();
+	$('#EACBtn').click(function(){
+		$('#EACInfo').slideToggle(500);
+	})
+});
