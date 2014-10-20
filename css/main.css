@@ -61,7 +61,7 @@ nav a.selected, nav a:hover {
 }
 
 #about_summary p {
-	border-bottom: 1px solid gray;
+	border-bottom: 3px groove gray;
 	padding-bottom: 10px;
 }
 
