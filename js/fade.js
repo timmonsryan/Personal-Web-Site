@@ -68,3 +68,10 @@ $(function(){
 		$('#EACInfo').slideToggle(500);
 	})
 });
+
+$(function(){
+	$('.project-info').hide();
+	$('#HecklersBtn').click(function(){
+		$('#HecklersInfo').slideToggle(500);
+	})
+});

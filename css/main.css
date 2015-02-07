@@ -3,7 +3,7 @@ GENERAL
 *************************/
 
 body, .loader {
-	margin: 0 auto;
+	margin: 0 auto;	
 	max-width: 100%;
 	text-align: center;
 }
@@ -32,7 +32,7 @@ nav a.selected, nav a:hover {
 }
 
 .loader h3 {
-	font-family: 'Liber Baskerville' serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 2em;
 	text-align: center;
 	margin: 10px 0;
@@ -55,6 +55,7 @@ nav a.selected, nav a:hover {
 }
 
 #about_summary {
+	font-family: 'Asap', sans-serif;
 	display: inline-block;
 	max-width: 500px;
 	text-align: center;
@@ -91,12 +92,13 @@ header {
 }
 
 h1 {
-	font-family: 'Libre Baskerville' serif;
+	font-family: 'Exo', sans-serif;
 	padding: 10px;
 	margin: 0;
 }
 
 h2 {
+	font-family: 	'Exo', sans-serif;
 	padding: 0 0 10px;
 	margin: -15px 0 0;
 	font-size: 1.5em;
@@ -223,6 +225,7 @@ PAGE CONTACT
 }
 
 #contact-content {
+	font-family: 'Asap', sans-serif;
 	margin-bottom: 10px;
 }
 
@@ -267,10 +270,12 @@ PAGE PROJECTS
 }
 
 #projects-container h4 {
+	font-family: 'Asap', sans-serif;
 	font-size: 1.5em;
 }
 
 .project-info {
+	font-family: 'Asap', sans-serif;
 	padding: 5px 10px 0;
 	border: 2px solid #006399;
 	border-top: none;
