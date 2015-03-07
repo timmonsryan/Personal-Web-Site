@@ -61,9 +61,12 @@ nav a.selected, nav a:hover {
 	text-align: center;
 }
 
-#about_summary p {
-	border-bottom: 3px groove gray;
-	padding-bottom: 10px;
+#about_summary hr {
+	margin: 10px auto;
+	color: black;
+	background-color: black;
+	height: 1px;
+	width: 80%;
 }
 
 #about_summary p.lead {
