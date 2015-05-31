@@ -54,11 +54,16 @@ nav a.selected, nav a:hover {
 	border-color: #297ACC;
 }
 
+/*************************
+PAGE ABOUT
+*************************/
+
 #about_summary {
 	font-family: 'Asap', sans-serif;
 	display: inline-block;
-	max-width: 500px;
+	max-width: 800px;
 	text-align: center;
+	padding: 0 10% 20px;
 }
 
 #about_summary hr {
@@ -70,8 +75,25 @@ nav a.selected, nav a:hover {
 }
 
 #about_summary p.lead {
-	margin-bottom: 5px;
+	margin-top: 15px;
+	margin-left: 5px;
 	padding-bottom: 5px;
+	padding-right: 25px;
+	float: left;
+	width: 65%;
+	display: block;
+	color: #297ACC;
+}
+
+#profile-pic {
+	margin: 0;
+	float: left;
+	display: block;
+}
+
+#about-top-row {
+	margin-bottom: 15px;
+	overflow: hidden;
 }
 
 .container {
@@ -116,9 +138,6 @@ h2 {
 	display: inline-block;
 }
 
-
-
-
 /*************************
 NAVIGATION
 *************************/
@@ -151,8 +170,6 @@ nav a {
 	color: #297ACC;
 }
 
-
-
 /*************************
 FOOTER
 *************************/
@@ -175,9 +192,6 @@ footer p {
 	margin: 0 5px; 	
 }
 
-
-
-
 /*************************
 COLORS
 *************************/
@@ -191,8 +205,6 @@ nav a {
 	color: #fff;
 }
 
-
-
 /*************************
 FOOTER
 *************************/
@@ -202,10 +214,6 @@ FOOTER
 	font-size: 2em;
 	text-align: center;
 }
-
-
-
-
 
 /*************************
 PAGE CONTACT
