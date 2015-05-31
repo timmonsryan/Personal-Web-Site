@@ -263,59 +263,6 @@ PAGE CONTACT
 PAGE PROJECTS
 *************************/
 
-/*#projects-content #project-img-set p {
-	background-color: white;
-	margin-top: 13px;
-	margin-bottom: -13px;
-}
-
-#projects-container {
-	margin-top: 15px;
-	text-align: left;
-	width: 100%;
-}
-
-#projects-container button {
-	margin-top: 10px;
-}
-
-#projects-container p {
-	padding-bottom: 0;
-}
-
-#projects-container h4 {
-	font-family: 'Asap', sans-serif;
-	font-size: 1.5em;
-}
-
-.project-info {
-	font-family: 'Asap', sans-serif;
-	padding: 5px 10px 0;
-	border: 2px solid #297ACC;
-	border-top: none;
-}
-
-.project-info ul {
-	margin-top: -5px;
-}
-
-.project-info p {
-	width: 100%;
-	display: inline-block;
-}
-
-#projects-container button {
-	width: 100%;
-	padding: 2px 5px;
-}
-
-.ProjectLinks {
-	width: 100%;
-	clear: both;
-	margin: 0 auto 5px;
-	text-align: center;
-}*/
-
 #project-select {
 	float: left;
 	width: 20%;
@@ -350,4 +297,21 @@ li.project-link {
 
 .ProjectLinks {
 	margin-left: 30px;
+}
+
+/*************************
+BOOTSTRAP
+*************************/
+
+.btn.tab {
+	border: solid 2px white;
+}
+
+.btn.tab.active {
+	color: white;
+	background-color: #297ACC;
+}
+
+.btn.tab.active:hover {
+	background-color: #297ACC;
 }
