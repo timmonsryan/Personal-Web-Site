@@ -9,7 +9,7 @@ body, .loader {
 }
 
 #content-wrapper {
-	max-width: 640px;
+	max-width: 800px;
 	width: 80%;
 	display: inline-block;
 }
@@ -38,7 +38,7 @@ nav a.selected, nav a:hover {
 	margin: 10px 0;
 	height: 37px; 
 	text-decoration: underline; 
-	color: #1D4FC3;
+	color: #297ACC;
 	
 }
 
@@ -51,7 +51,7 @@ nav a.selected, nav a:hover {
 	padding: 0;
 	border-style: outset;
 	border-width: 5px;
-	border-color: #2B63E5;
+	border-color: #297ACC;
 }
 
 #about_summary {
@@ -89,22 +89,31 @@ HEADER
 *************************/
 
 header {
-	text-align: center;
+	text-align: left;
 	margin: 0;
-	width: 100%;
+	width: 50%;
+	display: block;
+	float: left;
 }
 
 h1 {
 	font-family: 'Exo', sans-serif;
 	padding: 10px;
+	padding-left: 0;
 	margin: 0;
 }
 
 h2 {
 	font-family: 	'Exo', sans-serif;
-	padding: 0 0 10px;
+	padding: 0;
 	margin: -15px 0 0;
 	font-size: 1.5em;
+}
+
+#headerArea {
+	max-width: 800px;
+	width: 80%;
+	display: inline-block;
 }
 
 
@@ -115,11 +124,13 @@ NAVIGATION
 *************************/
 
 nav {
-	width: 100%;
-	/*background-color: #FD9444;*/
-	margin: -20px 0 0;
+	width: 40%;
+/*	background-color: #FD9444;*/
+	margin: 20px 0 0;
 	padding: 0;
 	text-align: center;
+	display: block;
+	float: right;
 }
 
 nav ul {
@@ -137,7 +148,7 @@ nav a {
 	text-decoration:none;
 	margin: 0;
 	padding: 15px 10px;	
-	color: #FF6600
+	color: #297ACC;
 }
 
 
@@ -172,7 +183,7 @@ COLORS
 *************************/
 
 #topheader {
-	background-image: linear-gradient(to bottom, #0033FF, #5A9FF9);
+	background-image: linear-gradient(to bottom, #297ACC, #5A9FF9);
 	color: #FFF;
 }
 
@@ -223,8 +234,8 @@ PAGE CONTACT
 
 #contact-info #contact-text {
 	text-align: center;
-	margin: 90x 0;
-	padding: 90x 0 0;
+	margin: 90px 0;
+	padding: 90px 0 0;
 }
 
 #contact-content {
@@ -252,7 +263,7 @@ PAGE CONTACT
 PAGE PROJECTS
 *************************/
 
-#projects-content #project-img-set p {
+/*#projects-content #project-img-set p {
 	background-color: white;
 	margin-top: 13px;
 	margin-bottom: -13px;
@@ -280,7 +291,7 @@ PAGE PROJECTS
 .project-info {
 	font-family: 'Asap', sans-serif;
 	padding: 5px 10px 0;
-	border: 2px solid #006399;
+	border: 2px solid #297ACC;
 	border-top: none;
 }
 
@@ -303,6 +314,40 @@ PAGE PROJECTS
 	clear: both;
 	margin: 0 auto 5px;
 	text-align: center;
+}*/
+
+#project-select {
+	float: left;
+	width: 20%;
+	display: block;
+	text-align: left;
+	list-style-type: none;
+	margin-left: 0;
+	border-right: solid 1px #297ACC;
+	padding-right: 5px;
+}
+li.project-link {
+	margin: 10px 0;
+	list-style-type: none;
+	padding: 5px 0 5px 5px;
+	border: 2px solid white;
+	border-radius: 5px;
+	overflow: hidden;
 }
 
+.active-project {
+	background-color: #297ACC;
+	color: white;
+}
 
+#project-text {
+	margin-top: 15px;
+	width: 75%;
+	display: block;
+	float: right;
+	text-align: left;
+}
+
+.ProjectLinks {
+	margin-left: 30px;
+}

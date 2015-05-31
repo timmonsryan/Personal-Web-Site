@@ -2,9 +2,11 @@ $(function(){
 	$("#projects-content").hide();
 	$("footer").hide();
 	$("nav").hide();
+	$(".project-info").hide();
 	$("header").hide().slideDown("slow",function(){
 		$("nav").hide().slideDown("slow",function(){
 			$("#projects-content").fadeIn(800);
+			$("#EACInfo").fadeIn(800);
 			$("footer").fadeIn(800);
 		})
 	})
@@ -33,6 +35,10 @@ $(function(){
 		$('footer').hide();
 		$('footer').fadeIn(800);
 		$('#projects-content').fadeIn(800);
+		$('.project-info').hide();
+		$('.project-link').removeClass('active-project');
+		$('#EACBtn').addClass('active-project');
+		$('#EACInfo').fadeIn(800);
 	})
 });
 
@@ -49,29 +55,33 @@ $(function(){
 });
 
 $(function(){
-	$('.project-info').hide();
-	$('#RecordStoreBtn').click(function(){
-		$('#RecordStoreInfo').slideToggle(500);
-	})
+	$(".project-link").click(function(){
+		$(".project-link").removeClass("active-project");
+		$(".project-info").hide();
+		$(this).addClass("active-project");
+	});
 });
 
 $(function(){
-	$('.project-info').hide();
-	$('#PersonalSiteBtn').click(function(){
-		$('#PersonalSiteInfo').slideToggle(500);
-	})
+	$("#EACBtn").click(function(){
+		$("#EACInfo").fadeIn(800);
+	});
 });
 
 $(function(){
-	$('.project-info').hide();
-	$('#EACBtn').click(function(){
-		$('#EACInfo').slideToggle(500);
-	})
+	$("#RecordStoreBtn").click(function(){
+		$("#RecordStoreInfo").fadeIn(800);
+	});
 });
 
 $(function(){
-	$('.project-info').hide();
-	$('#HecklersBtn').click(function(){
-		$('#HecklersInfo').slideToggle(500);
-	})
+	$("#PersonalSiteBtn").click(function(){
+		$("#PersonalSiteInfo").fadeIn(800);
+	});
+});
+
+$(function(){
+	$("#HecklersBtn").click(function(){
+		$("#HecklersInfo").fadeIn(800);
+	});
 });

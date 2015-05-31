@@ -14,25 +14,33 @@
 	</head>
 	<body>
 		<div id='topheader'>
-			<header>
-				<h1>Ryan Timmons</h1>
-				<h2>Developer</h2>
-			</header>
-			
-			<nav>
-				<ul>
-					<li><button class="selected btn tab active" id='projects-tab'>Projects</button></li>
-					<li><button class="btn tab" id='about-tab'>About</button></li>
-					<li><button class="btn tab" id='contact-tab'>Contact</button></li>
-				</ul>
-			</nav>
+			<div id='headerArea'>
+				<header>
+					<h1>Ryan Timmons</h1>
+					<h2>Developer</h2>
+				</header>
+				
+				<nav>
+					<ul>
+						<li><button class="selected btn tab active" id='projects-tab'>Projects</button></li>
+						<li><button class="btn tab" id='about-tab'>About</button></li>
+						<li><button class="btn tab" id='contact-tab'>Contact</button></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 		<div id="content-wrapper">
-			<div id='projects-content' class="loader">
-				<!-- <p id="coming-soon">Projects will be coming soon!</p> -->
-				<div id="projects-container">
+			<div id="projects-content" class="loader">
+				<div>
 					<h3>Projects</h3>
-					<button id="EACBtn" class="btn btn-primary btn-lg btn-block">Sample Activity Club</button>
+					<ul id="project-select">
+						<li id="EACBtn" class="project-link active-project">Employee Activity Club</li>
+						<li id="RecordStoreBtn" class="project-link">RecordStore</li>
+						<li id="HecklersBtn" class="project-link">Hecklers Band Site</li>
+						<li id="PersonalSiteBtn" class="project-link">Personal Web Site</li>
+					</ul>
+				</div>
+				<div id="project-text">
 					<div class="project-info" id="EACInfo">
 						<p><i>  Application that Allows Users to Register for Events and View Latest Updates</i></p>
 						<ul>
@@ -44,7 +52,6 @@
 						</ul>
 						<p class="ProjectLinks"><a href="http://eac1776.herokuapp.com/">Link</a> | <a href="https://github.com/timmonsryan/EmployeeActivityClub">Code</a></p>
 					</div>
-					<button id="RecordStoreBtn" class="btn btn-primary btn-lg btn-block">RecordStore</button>
 					<div class="project-info" id="RecordStoreInfo">
 						<p><i>  Application Created to Track a User's Vinyl Record Collection</i></p>
 						<ul>
@@ -56,7 +63,6 @@
 						</ul>
 						<p class="ProjectLinks"><a href="http://secret-island-1345.herokuapp.com/">Link</a> | <a href="https://github.com/timmonsryan/RecordStore">Code</a></p>
 					</div>
-					<button id="HecklersBtn" class="btn btn-primary btn-lg btn-block">Band Site for The Hecklers</button>
 					<div class="project-info" id="HecklersInfo">
 						<p><i>  Simple Static Website for Band Promotion</i></p>
 						<ul>
@@ -65,7 +71,6 @@
 						</ul>
 						<p class="ProjectLinks"><a href="http://www.thehecklersband.com">Link</a></p>
 					</div>
-					<button id="PersonalSiteBtn" class="btn btn-primary btn-lg btn-block">Personal Web Site</button>
 					<div class="project-info" id="PersonalSiteInfo">
 						<p><i>  Web Site with Personal Information and Project Info</i></p>
 						<ul>
@@ -76,7 +81,6 @@
 						</ul>
 						<p class="ProjectLinks"><a href="http://www.ryantimmonsdev.com">(This Site)</a> | <a href="https://github.com/timmonsryan/personal_web_site">Code</a></p>
 					</div>
-					<a href="https://github.com/timmonsryan" id="GitHubLink">My GitHub Page</a>
 				</div>
 			</div>
 			<div id='about-content' class="loader">
@@ -89,11 +93,11 @@
 					<hr align="center" />
 					<p>I use a solid mix of languages and modern utilities in order to create functional, user-friendly websites and apps.</p>
 					<hr/>
-					<p>My developer's toolkit includes client-side essentials like HTML, CSS, and JavaScript, back-end MVC frameworks like Ruby on Rails and Spring, database management systems including SQLite and MySQL,  and other useful libraries/frameworks such as jQuery, CoffeeScript, Sass, Bootstrap, and AngularJS.</p>
+					<p>My developer's toolkit includes client-side essentials like HTML, CSS, and JavaScript, back-end MVC frameworks like Ruby on Rails and Spring MVC, database management systems including SQLite and MySQL,  and other useful libraries/frameworks such as jQuery, CoffeeScript, Sass, Bootstrap, and AngularJS.</p>
 					<hr/>
 					<p>I have rounded out my skillset as a developer through the use of Git as a version control system, the study of Agile project methodologies, and the development of critical debugging and research skills.</p>
 					<hr/>
-					<p>I have also ensured that the code I produce is stable and durable by adhering to test-driven development and behavior-driven development principles supported by the use of RSpec, Capybara, and a bit of Cucumber.</p>
+					<p>I have also ensured that the code I produce is stable and durable by adhering to test-driven development and behavior-driven development principles supported by the use of JUnit, Selenium, RSpec, and Capybara.</p>
 				</div>
 			</div>
 			<div id="contact-content" class="loader">
@@ -104,6 +108,10 @@
 					<a href="mailto: timmonsryan@ymail.com">
 					timmonsryan@ymail.com
 					</a><br/>
+					<span class="label label-info">Twitter</span>
+					<a href="http://twitter.com/timmonseryan">
+					timmonsryan
+					</a></br>
 					<span class="label label-info">GitHub</span>
 					<a href="https://github.com/timmonsryan">
 					timmonsryan
