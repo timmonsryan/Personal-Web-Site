@@ -240,10 +240,17 @@ PAGE CONTACT
 	text-align: center;
 }
 
-#contact-info #contact-text {
-	text-align: center;
-	margin: 90px 0;
-	padding: 90px 0 0;
+#contact-text {
+	width: 40%;
+	float: left;
+	text-align: left;
+	padding-right: 5px;
+}
+
+#contact-links {
+	float: left;
+	padding: 10px;
+	border-left: 1px solid #297ACC;
 }
 
 #contact-content {
@@ -264,6 +271,13 @@ PAGE CONTACT
 
 #contact-links a {
 	margin-left: 5px;
+}
+
+#resume-link {
+	margin: 0 auto;
+	display: block;
+	width: 109px;
+	margin-top: 20px;
 }
 
 
@@ -306,6 +320,10 @@ li.project-link {
 
 .ProjectLinks {
 	margin-left: 30px;
+}
+
+.ProjectLinks a {
+	margin-left: 5px;
 }
 
 /*************************
