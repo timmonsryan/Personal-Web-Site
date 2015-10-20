@@ -75,7 +75,7 @@ PAGE ABOUT
 }
 
 #about_summary p.lead {
-	margin-top: 15px;
+	margin-top: 30px;
 	margin-left: 5px;
 	padding-bottom: 5px;
 	padding-right: 25px;
@@ -94,6 +94,7 @@ PAGE ABOUT
 #about-top-row {
 	margin-bottom: 15px;
 	overflow: hidden;
+	min-width: 550px;
 }
 
 .container {
@@ -241,16 +242,24 @@ PAGE CONTACT
 }
 
 #contact-text {
-	width: 40%;
+	width: 50%;
 	float: left;
 	text-align: left;
 	padding-right: 5px;
 }
 
 #contact-links {
-	float: left;
+	margin: 0 auto;	
 	padding: 10px;
+}
+
+#contact-links-wrapper {
+	overflow: hidden;
 	border-left: 1px solid #297ACC;
+}
+
+#contact-links a {
+	margin-left: 5px;
 }
 
 #contact-content {
@@ -269,15 +278,20 @@ PAGE CONTACT
 	display: inline;
 }
 
-#contact-links a {
-	margin-left: 5px;
-}
-
 #resume-link {
 	margin: 0 auto;
 	display: block;
 	width: 109px;
 	margin-top: 20px;
+}
+
+#blog-section {
+	border-top: 1px solid #297ACC;
+	padding-top: 5px;
+}
+
+span#blog-title {
+	color: #297ACC;
 }
 
 
