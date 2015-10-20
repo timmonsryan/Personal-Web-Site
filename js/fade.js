@@ -6,7 +6,7 @@ $(function(){
 	$("header").hide().slideDown("slow",function(){
 		$("nav").hide().slideDown("slow",function(){
 			$("#projects-content").fadeIn(800);
-			$("#EACInfo").fadeIn(800);
+			$("#ThreadFixInfo").fadeIn(800);
 			$("footer").fadeIn(800);
 		})
 	})
@@ -37,8 +37,8 @@ $(function(){
 		$('#projects-content').fadeIn(800);
 		$('.project-info').hide();
 		$('.project-link').removeClass('active-project');
-		$('#EACBtn').addClass('active-project');
-		$('#EACInfo').fadeIn(800);
+		$('#ThreadFixBtn').addClass('active-project');
+		$('#ThreadFixInfo').fadeIn(800);
 	})
 });
 
@@ -65,6 +65,24 @@ $(function(){
 $(function(){
 	$("#EACBtn").click(function(){
 		$("#EACInfo").fadeIn(800);
+	});
+});
+
+$(function(){
+	$("#ThreadFixBtn").click(function(){
+		$("#ThreadFixInfo").fadeIn(800);
+	});
+});
+
+$(function(){
+	$("#TionscadalBtn").click(function(){
+		$("#TionscadalInfo").fadeIn(800);
+	});
+});
+
+$(function(){
+	$("#GrapevineBtn").click(function(){
+		$("#GrapevineInfo").fadeIn(800);
 	});
 });
 
