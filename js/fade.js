@@ -75,6 +75,12 @@ $(function(){
 });
 
 $(function(){
+	$("#TfDockerBtn").click(function(){
+		$("#TfDockerInfo").fadeIn(800);
+	});
+});
+
+$(function(){
 	$("#TionscadalBtn").click(function(){
 		$("#TionscadalInfo").fadeIn(800);
 	});
